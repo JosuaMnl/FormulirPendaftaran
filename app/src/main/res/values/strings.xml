@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Formulir Pendaftaran</string>
+    <string-array name="arr_prodi">
+        <item>Sistem Informasi</item>
+        <item>Informatika</item>
+        <item>Teknik Elektro</item>
+        <item>Manajemen</item>
+        <item>Akuntansi</item>
+    </string-array>
+</resources>
