@@ -1,0 +1,27 @@
+package com.BelajarAndroid.formulirpendaftaran;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class ResultActivity extends AppCompatActivity {
+    private TextView tvNama, tvNPM, tvProdi, tvJK;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_result);
+
+        tvNPM = findViewById(R.id.tv_npm);
+        tvNama = findViewById(R.id.tv_nama);
+        tvJK = findViewById(R.id.tv_jenis_kelamin);
+        tvProdi = findViewById(R.id.tv_prodi);
+
+        Intent intent = getIntent();
+        tvNPM.setText(intent.getStringExtra("varNPM"));
+        tvNama.setText(intent.getStringExtra("varNama"));
+        tvJK.setText(intent.getStringExtra("varJK"));
+        tvProdi.setText(intent.getStringExtra("varProdi"));
+    }
+}
